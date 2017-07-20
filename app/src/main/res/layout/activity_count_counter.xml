@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.myapplication.CountCounterActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Team A" />
+
+            <TextView
+                android:id="@+id/score_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="50dp" />
+
+
+            <Button
+                android:id="@+id/pointa3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16sp"
+                android:background="#f08745"
+                android:onClick="a3ScorePlusButtonClicked"
+                android:text="+3 POINTS" />
+
+
+            <Button
+                android:id="@+id/pointa2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16sp"
+                android:background="#f08745"
+                android:onClick="a2ScorePlusButtonClicked"
+                android:text="+2 POINTS" />
+
+
+            <Button
+                android:id="@+id/pointa1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16sp"
+                android:background="#f08745"
+                android:onClick="a1ScorePlusButtonClicked"
+                android:text="FREE POINTS" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Team B" />
+
+
+            <TextView
+                android:id="@+id/score_B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="50dp" />
+
+
+            <Button
+                android:id="@+id/pointb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16sp"
+                android:background="#f08745"
+                android:onClick="b3ScorePlusButtonClicked"
+                android:text="+3 POINTS" />
+
+
+            <Button
+                android:id="@+id/pointb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16sp"
+                android:background="#f08745"
+                android:onClick="b2ScorePlusButtonClicked"
+                android:text="+2 POINTS" />
+
+
+            <Button
+                android:id="@+id/pointb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16sp"
+                android:background="#f08745"
+                android:onClick="b1ScorePlusButtonClicked"
+                android:text="FREE POINTS" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset"
+        android:onClick="reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#f08745"
+        android:text="reset" />
+
+</LinearLayout>
